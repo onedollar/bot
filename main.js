@@ -744,8 +744,8 @@
 		},
 		eventCurateupdate: function (obj) {
 			for (var i = 0; i < bot.room.users.length; i++) {
-				if (bot.room.users.[i].id === obj.user.id) {
-					bot.room.users.[i].votes.curate++;
+				if (bot.room.users[i].id === obj.user.id) {
+					bot.room.users[i].votes.curate++;
 				}
 			}
 		},
