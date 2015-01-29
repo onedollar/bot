@@ -80,7 +80,7 @@
 	};
 
 	var retrieveFromStorage = function () {
-		var info.localStorage.getItem("botStorageInfo");
+		var info = localStorage.getItem("botStorageInfo");
 		if (info === null) API.chatLog(bot.chat.nodatafound);
 		else {
 			var settings = JSON.parse(localStorage.getItem("botsettings"));
