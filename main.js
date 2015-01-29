@@ -46,7 +46,7 @@
 
 	var loadChat = function (cb) {
 		if (!cb) cb = function () {};
-		$.get("", function (json) {
+		$.get("https://cdn.rawgit.com/onedollar/bot/master/lang/langIndex.json", function (json) {
 			var link = bot.chatLink;
 			if (json !== null && typeof json !== "undefined") {
 				langIndex = json;
@@ -143,9 +143,9 @@
 		status: false,
 		name: "Brite Bot",
 		loggedInID: null,
-		scriptLink: "",
+		scriptLink: "https://cdn.rawgit.com/onedollar/bot/master/main.js",
 		cmdLink: "",
-		chatLink: "",
+		chatLink: "https://cdn.rawgit.com/onedollar/bot/master/lang/en.json",
 		chat: null,
 		loadChat: loadChat,
 		retrieveSettings: retrieveSettings,
@@ -153,7 +153,7 @@
 		settings: {
 			botName: "Brite Bot",
 			language: "english",
-			chatLink: "",
+			chatLink: "https://cdn.rawgit.com/onedollar/bot/master/lang/en.json",
 			maximumAfk: 120,
 			afkRemoval: true,
 			maximumDc: 60,
