@@ -677,7 +677,7 @@
 			var known = false;
 			var index = null;
 			for (var i = 0; i < bot.room.users.length; i++) {
-				if (bot.room.users.[i].id === user.id) {
+				if (bot.room.users[i].id === user.id) {
 					known = true;
 					index = i;
 				}
